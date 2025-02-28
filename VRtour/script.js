@@ -1,4 +1,4 @@
-// Function to add 'visible' class to sections as they come into view
+
 function handleScroll() {
     const sections = document.querySelectorAll('.tour-section');
     const windowHeight = window.innerHeight;
@@ -14,7 +14,6 @@ function handleScroll() {
     });
 }
 
-// Smooth scroll for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -24,8 +23,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Initial call to handle scroll animation
+
 handleScroll();
 
-// Event listener for scroll
+
 window.addEventListener('scroll', handleScroll);
